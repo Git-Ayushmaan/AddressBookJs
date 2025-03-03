@@ -1,3 +1,4 @@
+
 class Contact {
     constructor(firstName, lastName, address, city, state, zip, phone, email) {
       this.firstName = firstName;
@@ -62,3 +63,7 @@ class Contact {
       addressBook.splice(index, 1);
     }
   }
+  function countContacts() {
+    return addressBook.reduce((count) => count + 1, 0);
+  }
+  
